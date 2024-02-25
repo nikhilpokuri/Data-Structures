@@ -1,4 +1,4 @@
-def commonElements (A, B, C, n1, n2, n3):
+def commonElements (A, B, C):
     a = set(A)
     b = set(B)
     c = set(C)
@@ -10,4 +10,4 @@ def commonElements (A, B, C, n1, n2, n3):
         res.sort()
         return res
     return [-1]
-print(commonElements([1,2,3,4],[2,3,5],[2,3,4,6],4,3,4))
+print(commonElements([1,2,3,4],[2,3,5],[2,3,4,6]))
