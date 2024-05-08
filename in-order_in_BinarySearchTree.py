@@ -12,7 +12,7 @@ class BST:
         self.rchild=None
     def insert(self,data):#inorder to perform in-order,we've to insert nodes to BST
         if self.key is None:
-            self.key==data
+            self.key=data
         elif self.key==data:
             return
         else:
