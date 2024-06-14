@@ -26,14 +26,14 @@ class BST:
                     self.rchild.insert(data)
                 else:
                     self.rchild=BST(data)
-    def leftView(root,level,lis):
+    def leftView(self,root,level,lis):
         #draft draft draft draft
         if root==None:
             return
         if level==len(lis):
             lis.append(root.data)
-        leftView(root.lchild,level+1,lis)
-        leftView(root.rchild,level+1,lis)
+        self.leftView(root.lchild,level+1,lis)
+        self.leftView(root.rchild,level+1,lis)
 root=BST(None)
 arr=[10,6,3,1,6,98,3,7]
 for i in arr:
